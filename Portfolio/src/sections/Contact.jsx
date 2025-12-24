@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
+import ParticlesBackground from "../components/ParticlesBackground";
 
 const Contact = () => {
   return (
-    <div className='w-full h-screen'>
-      contact
+    <div className="relative w-full h-screen">
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

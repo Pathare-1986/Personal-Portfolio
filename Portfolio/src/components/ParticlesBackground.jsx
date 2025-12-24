@@ -54,25 +54,25 @@ const ParticlesBackground = () => {
       createParticles();
     }
     handleResize();
-    window.addEventListener("resize",handleResize);
+    window.addEventListener("resize", handleResize);
 
     let animationId;
-    function animate(){
-        ctx.clearRect(0,0,canvas.width,canvas.height);
-        particles.forEach((p)=> p.update());
-        animationId = requestAnimationFrame(animate)
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach((p) => p.update());
+      animationId = requestAnimationFrame(animate);
     }
     animate();
-    return ()=>{
-        cancelAnimationFrame(animationId);
-        window.removeEventListener("resize",handleResize)
-    }
-  },[]);
+    return () => {
+      cancelAnimationFrame(animationId);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <canvas
       ref={canvasRef}
-      className="fiexed top-0 left-0 w-full h-full pointer-event-none z-0"
+      className="absolute top-0 left-0 w-full h-full pointer-events-none z-10"
     ></canvas>
   );
 };
