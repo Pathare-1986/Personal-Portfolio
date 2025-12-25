@@ -8,11 +8,11 @@ const About = () => {
     "bottom-0 right-10 w-[420px] h-[420px] opacity-15 blur-[140px] delay-300",
     "top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[220px] h-[220px] opacity-10 blur-[100px]",
   ];
-  const stats = [
-    { label: "Experience", value: "Fresher" },
-    { label: "Full-Stack Development", value: "UI, Performance" },
-    { label: "Focus", value: "UI, Performance" },
-  ];
+ const stats = [
+  { label: "Experience", value: "Fresher" },
+  { label: "Specialization", value: "Full-Stack Development" },
+  { label: "Focus Areas", value: "UI & Performance" },
+];
 
   return (
     <section

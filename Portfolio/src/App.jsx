@@ -8,6 +8,7 @@ import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import CustomCursor from "./components/CustomCursor";
 import IntroAnimation from "./components/IntroAnimation";
+import Hackthons from "./sections/Hackathons";
 
 const App = () => {
   const [introDone, setIntroDone] = useState(false);
@@ -23,6 +24,7 @@ const App = () => {
           <About />
           <Skills />
           <Projects />
+          <Hackthons/>
           <Contact />
           <Footer />
         </div>
